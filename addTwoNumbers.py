@@ -35,4 +35,26 @@ class Solution(object):
 
 
 solution = Solution()
-print(solution.addTwoNumbers([2, 4, 3], [5, 6, 4]))
+
+# Create the first linked list
+node1 = ListNode(2)
+node2 = ListNode(4)
+node3 = ListNode(3)
+node1.next = node2
+node2.next = node3
+
+# Create the second linked list
+node4 = ListNode(5)
+node5 = ListNode(6)
+node6 = ListNode(4)
+node4.next = node5
+node5.next = node6
+
+# Add the two linked lists
+result = solution.addTwoNumbers(node1, node4)
+
+# Print the values of the resulting linked list
+current = result
+while current:
+    print(current.val, end=" ")
+    current = current.next
