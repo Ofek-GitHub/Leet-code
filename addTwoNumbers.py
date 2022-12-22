@@ -16,7 +16,7 @@ class Solution(object):
         :type l2: ListNode
         :rtype: ListNode
         """
-        result = ListNode(0)
+        result = ListNode(0)    
         result_tail = result
         carry = 0
 
